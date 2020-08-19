@@ -10,6 +10,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-alias vimrc='vim ~/.vimrc'
-alias zshrc='vim ~/.zshrc'
+alias vimrc='vim ~/.dotfiles/.vimrc'
+alias zshrc='vim ~/.dotfiles/.zshrc'
 alias zshtheme='vim ~/.oh-my-zsh/themes/meekoder.zsh-theme'
