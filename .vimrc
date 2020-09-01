@@ -9,6 +9,7 @@
 
 	call vundle#begin()
 		Plugin 'VundleVim/Vundle.vim'
+		Plugin 'junegunn/fzf'
 		Plugin 'junegunn/fzf.vim'
 		Plugin 'itchyny/lightline.vim'
 		Plugin 'tpope/vim-surround'
@@ -31,9 +32,11 @@
 " =========== Tabs ==========
 
 	set autoindent
-	set smarttab
 	set tabstop=2
+	set softtabstop=0
+	set expandtab
 	set shiftwidth=2
+	set smarttab
 
 " ========== Indentation ==========
 
@@ -74,7 +77,7 @@
 
 " ========== Key Mapping ==========
 	" FZF
-		map <C-p> :FZF<CR>
+		map <C-p> :Files<CR>
 
 	" Split Navigation
 		nnoremap <C-h> <C-w>h
