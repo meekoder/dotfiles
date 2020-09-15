@@ -91,7 +91,7 @@
 		smap <C-x> <C-g>x
 		imap <C-v> <Esc>pi
 		smap <C-v> <C-g>p
-
+    
 " ========== Cursor ==========
 
 	if has("autocmd")
