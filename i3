@@ -1,1 +1,0 @@
-/home/meeko/.config/i3
