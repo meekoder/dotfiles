@@ -13,8 +13,10 @@ source $ZSH/oh-my-zsh.sh
 alias vimrc='vim ~/.dotfiles/.vimrc'
 alias zshrc='vim ~/.dotfiles/.zshrc'
 alias zshtheme='vim ~/.oh-my-zsh/themes/meekoder.zsh-theme'
-alias slack='flatpak run com.slack.Slack'
 alias i3config='vim ~/.config/i3/config'
 alias comptonconfig='vim ~/.config/compton.conf'
+alias vscode='flatpak run com.visualstudio.code & disown'
+alias slack='slack & disown'
+alias zoom='zoom & disown'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
