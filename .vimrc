@@ -19,6 +19,7 @@
 		Plugin 'dense-analysis/ale'
 		Plugin 'mattn/emmet-vim'
 		Plugin 'alvan/vim-closetag'
+    Plugin 'christoomey/vim-tmux-navigator'
 
 	call vundle#end()
 	syntax on
