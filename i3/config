@@ -12,8 +12,8 @@
 # startup
 exec_always feh --bg-scale /home/meeko/Documents/wallpaper.jpg
 exec compton --config ~/.config/compton.conf
-exec xautolock -time 5 -locker 'i3lock-fancy -f "Terminus-(TTF)"'
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# exec xautolock -time 5 -locker 'i3lock-fancy -f "Terminus-(TTF)"'
+# exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Gaps
 hide_edge_borders both
