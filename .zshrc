@@ -1,5 +1,6 @@
 export ZSH='/home/meeko/.oh-my-zsh'
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$PATH:/usr/local/go/bin
 
 RPROMPT='$(git_prompt_info) %F{blue}] %F{green}%D{%H:%M}'
 ZSH_THEME='meekoder'
@@ -18,5 +19,6 @@ alias comptonconfig='vim ~/.config/compton.conf'
 alias vscode='flatpak run com.visualstudio.code & disown'
 alias slack='slack & disown'
 alias zoom='zoom & disown'
+alias spotify='spotify & disown'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
