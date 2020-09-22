@@ -6,29 +6,3 @@ Xft.hintstyle:  hintfull
 Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
-
-! === rofi ===
-
-rofi.width:                          100
-rofi.lines:                          5
-rofi.columns:                        1
-rofi.font:                           Terminus (TTF) 35px
-rofi.fg:                             #f3f4f5
-rofi.bg:                             #2f343f
-rofi.hlfg:                           #ace6d3
-rofi.hlbg:                           #2f343f
-rofi.bc:                             #2f343f
-! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
-rofi.color-normal: #2f343f,  #f3f4f5,  #2f343f,  #2f343f,  #ace6d3
-rofi.color-normal: #2f343f,  #f3f4f5,  #2f343f,  #2f343f,  #ace6d3
-rofi.color-normal: #2f343f,  #f3f4f5,  #2f343f,  #2f343f,  #ace6d3
-
-!                  'background', 'border'
-rofi.color-window: #2f343f,      #2f343f
-rofi.padding:                        1000
-rofi.bw:                             0
-rofi.case-sensitive:                 false
-rofi.line-margin:                    5
-rofi.hide-scrollbar:                 true
-rofi.separator-style:                solid
-rofi.markup-rows:                    false
