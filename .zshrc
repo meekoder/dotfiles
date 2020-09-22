@@ -16,9 +16,10 @@ alias zshrc='vim ~/.dotfiles/.zshrc'
 alias zshtheme='vim ~/.oh-my-zsh/themes/meekoder.zsh-theme'
 alias i3config='vim ~/.config/i3/config'
 alias comptonconfig='vim ~/.config/compton.conf'
-alias vscode='flatpak run com.visualstudio.code & disown'
 alias slack='slack & disown'
 alias zoom='zoom & disown'
 alias spotify='spotify & disown'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/usr/lib/ccache:$PATH"
+if [ -e /home/meeko/.nix-profile/etc/profile.d/nix.sh ]; then . /home/meeko/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
