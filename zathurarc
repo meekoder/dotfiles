@@ -1,8 +1,8 @@
 # Zathura configuration file
 # Colors
 
-  set default-bg "#000000" #00
-  set default-fg "#F7F7F6" #01
+  set default-bg "#2f343f" #00
+  set default-fg "#f3f4f5" #01
 
   set statusbar-fg "#B0B0B0" #04
   set statusbar-bg "#202020" #01
