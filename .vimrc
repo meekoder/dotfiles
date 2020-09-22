@@ -25,6 +25,14 @@
 	syntax on
 	filetype plugin indent on
 
+" ========== Plugin Variables ==========
+
+	let g:lightline = { 'colorscheme' : 'Tomorrow_Night_Eighties' }
+	let g:NERDSpaceDelims = 1
+	let g:ale_linters = {'javascript': ['eslint']}
+	let b:ale_fixers = {'javascript': ['eslint']}
+	let g:ale_javascript_eslint_use_global = 1
+
 " ============ Line Numbers ==========
 
 	set number
@@ -68,14 +76,6 @@
 	nnoremap j gj
 	nnoremap k gk
 
-" ========== Plugin Variables ==========
-
-	let g:lightline = { 'colorscheme' : 'Tomorrow_Night_Eighties' }
-	let g:NERDSpaceDelims = 1
-	let g:ale_linters = {'javascript': ['eslint']}
-	let b:ale_fixers = {'javascript': ['eslint']}
-	let g:ale_javascript_eslint_use_global = 1
-
 " ========== Key Mapping ==========
 	" FZF
 		map <C-p> :Files<CR>
@@ -105,5 +105,3 @@
 			\ endif
 		au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
 	endif
-
-	set ttimeoutlen=1
