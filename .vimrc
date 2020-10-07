@@ -58,7 +58,7 @@
 	set background=dark
 	set mouse=a
 	set ruler
-	set laststatus=2
+console.log(teamSales, salesTeam.manages)	set laststatus=2
 	set noshowmode
 
 " ========== Spellcheck ==========
@@ -93,6 +93,7 @@
 		imap <C-v> <Esc>pi
 		smap <C-v> <C-g>p
     
+	set ttimeoutlen=1
 " ========== Cursor ==========
 
 	if has("autocmd")
