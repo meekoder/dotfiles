@@ -58,7 +58,7 @@
 	set background=dark
 	set mouse=a
 	set ruler
-console.log(teamSales, salesTeam.manages)	set laststatus=2
+	set laststatus=2
 	set noshowmode
 
 " ========== Spellcheck ==========
