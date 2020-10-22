@@ -27,7 +27,7 @@ exec --no-startup-id xss-lock -- betterlockscreen -l
 # NetworkManager
 exec --no-startup-id nm-applet
 
-# Use pactl to adjust volume in PulseAudio.
+# # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
@@ -61,11 +61,10 @@ bindsym Mod1+$down focus down
 bindsym Mod1+$up focus up
 bindsym Mod1+$right focus right
 
-  # Using arrow keys:
-  bindsym Mod1+Left focus left
-  bindsym Mod1+Down focus down
-  bindsym Mod1+Up focus up
-  bindsym Mod1+Right focus right
+bindsym Mod1+Left focus left
+bindsym Mod1+Down focus down
+bindsym Mod1+Up focus up
+bindsym Mod1+Right focus right
 
 # Move focused window
 bindsym Mod1+Shift+$left move left
@@ -73,11 +72,10 @@ bindsym Mod1+Shift+$down move down
 bindsym Mod1+Shift+$up move up
 bindsym Mod1+Shift+$right move right
 
-  # Using arrow keys:
-  bindsym Mod1+Shift+Left move left
-  bindsym Mod1+Shift+Down move down
-  bindsym Mod1+Shift+Up move up
-  bindsym Mod1+Shift+Right move right
+bindsym Mod1+Shift+Left move left
+bindsym Mod1+Shift+Down move down
+bindsym Mod1+Shift+Up move up
+bindsym Mod1+Shift+Right move right
 
 # Split in vertical orientation
 bindsym Mod1+v split v
@@ -168,8 +166,8 @@ mode "resize" {
 bindsym Mod1+r mode "resize"
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec light -A 5;
-bindsym XF86MonBrightnessDown exec light -U 5;
+bindsym XF86MonBrightnessUp exec "light -A 5";
+bindsym XF86MonBrightnessDown exec "light -U 5";
 
 # PrtSc Button
 bindsym --release Print exec gnome-screenshot -i
