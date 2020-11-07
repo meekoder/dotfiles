@@ -3,6 +3,7 @@ exec_always feh --bg-scale /home/meeko/Documents/wallpaper.jpg
 exec compton --config ~/.config/compton.conf
 exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 600 "betterlockscreen -l" "" --timer 3600 "systemctl suspend" ""
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 # Gaps
 hide_edge_borders both
 for_window [class="^.*"] border pixel 0
@@ -20,21 +21,20 @@ workspace_layout default
 # Font for window titles.
 font pango:Terminus 25px
 
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
+# betterlockscreen
 exec --no-startup-id xss-lock -- betterlockscreen -l
 
 # NetworkManager
 exec --no-startup-id nm-applet
 
-# # Use pactl to adjust volume in PulseAudio.
+# Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-# Movement
+# Vim Movement
 set $up k
 set $down j
 set $left h
