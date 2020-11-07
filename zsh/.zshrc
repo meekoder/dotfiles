@@ -19,7 +19,12 @@ alias i3config='vim ~/.config/i3/config'
 alias comptonconfig='vim ~/.config/compton.conf'
 alias slack='slack & disown'
 alias zoom='zoom & disown'
+alias obs='flatpak run com.obsproject.Studio & disown'
+
 alias audio-hdmi='pacmd set-card-profile 0 output:hdmi-stereo+input:analog-stereo'
 alias audio-laptop='pacmd set-card-profile 0 output:analog-stereo+input:analog-stereo'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="/home/meeko/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
