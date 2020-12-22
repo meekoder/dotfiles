@@ -1,5 +1,6 @@
   set nocompatible
 	set nobackup
+	set noswapfile
 
 " ============ Plugin Manager ==========
 
@@ -20,12 +21,15 @@
 		Plugin 'mattn/emmet-vim'
 		Plugin 'alvan/vim-closetag'
     Plugin 'christoomey/vim-tmux-navigator'
+		Plugin 'epilande/vim-react-snippets'
+		Plugin 'SirVer/ultisnips'
 
 	call vundle#end()
 	syntax on
 	filetype plugin indent on
 
 " ========== Plugin Variables ==========
+  let g:UltiSnipsExpandTrigger="<C-r>"
 
 	let g:lightline = { 'colorscheme' : 'Tomorrow_Night_Eighties' }
 	let g:NERDSpaceDelims = 1
@@ -72,10 +76,6 @@
 	set ignorecase
 	set smartcase
 
-" ========== Intuitive Line Movement ==========
-	nnoremap j gj
-	nnoremap k gk
-
 " ========== Key Mapping ==========
 	" FZF
 		map <C-p> :Files<CR>
@@ -87,13 +87,14 @@
 		nnoremap <C-l> <C-w>l
 	
 	" Cut/Copy/Paste
-		set clipboard=unnamedplus	
+		set clipboard=unnamedplus
 		smap <C-c> <C-g>y
 		smap <C-x> <C-g>x
 		imap <C-v> <Esc>pi
 		smap <C-v> <C-g>p
     
 	set ttimeoutlen=1
+
 " ========== Cursor ==========
 
 	if has("autocmd")
@@ -106,3 +107,4 @@
 			\ endif
 		au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
 	endif
+

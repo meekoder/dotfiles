@@ -1,8 +1,26 @@
 # Startup
 exec_always feh --bg-scale /home/meeko/Documents/wallpaper.jpg
 exec compton --config ~/.config/compton.conf
-exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 600 "betterlockscreen -l" "" --timer 3600 "systemctl suspend" ""
+# exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 600 "betterlockscreen -l" "" --timer 3600 "systemctl suspend" ""
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# Monitors
+exec --no-startup-id xrandr --output DP-1 --auto --left-of eDP-1 --auto
+
+set $firstMonitor DP-1
+set $secondMonitor eDP-1
+
+workspace 1 output $firstMonitor
+workspace 2 output $firstMonitor
+workspace 3 output $firstMonitor
+workspace 4 output $firstMonitor
+workspace 5 output $firstMonitor
+workspace 6 output $secondMonitor
+workspace 7 output $secondMonitor
+workspace 8 output $secondMonitor
+workspace 9 output $secondMonitor
+workspace 10 output $secondMonitor
+
 
 # Gaps
 hide_edge_borders both
@@ -22,7 +40,7 @@ workspace_layout default
 font pango:Terminus 25px
 
 # betterlockscreen
-exec --no-startup-id xss-lock -- betterlockscreen -l
+# exec --no-startup-id xss-lock -- betterlockscreen -l
 
 # NetworkManager
 exec --no-startup-id nm-applet
